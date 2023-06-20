@@ -1,0 +1,52 @@
+.header{    
+    height: 4em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #f1f3f6;
+    box-shadow: inset 0 0 15px rgba(55, 84, 170,0),
+                inset 0 0 20px rgba(255, 255, 255,0),
+                7px 7px 15px rgba(55, 84, 170,.15),
+                -7px -7px 20px rgba(255, 255, 255,1),
+                inset 0px 0px 4px rgba(255, 255, 255,.2);
+    &__container{
+        display: flex;
+        justify-content: center;
+        // margin: auto;
+        margin-left: auto;
+        margin-right: auto;
+        width: 72%;
+        height: 100%;
+        align-items: center;
+    }
+    &__nav{
+        display: flex;
+        width: 65%;
+        flex: 0 1 auto;
+        justify-content: center;
+        height: 100%;
+        align-items: center;
+        &>ul{
+            display: flex;
+            width: 100%;
+            align-items: center;
+            list-style: none;
+            justify-content: space-around;   
+            height: 100%;
+            & li{
+                height: 100%;
+                width: 20%;
+            }
+        }
+    }
+    &__tab{
+        height: 100%;
+        padding-left: 10%;
+        padding-right: 10%;
+        border: 1px solid #000;
+        font-size: 20px;
+        &:hover{
+            cursor: pointer;
+        }
+    }
+}

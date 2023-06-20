@@ -1,0 +1,47 @@
+.itemInfo{
+    grid-column: 2/5;
+    align-self: start;
+    position: sticky;
+    top: 0px;
+    &__container{
+        display: flex;
+        flex-direction: column;
+    }
+    &__header{
+        display: flex;
+    }
+    &__info{
+        display: flex;
+        flex-direction: column;
+        align-content: flex-start;
+        flex-grow: 1;
+    }
+    &__pic{
+        width: 45%;
+        overflow: hidden;
+        border-radius: 20px;
+        margin-right: 7%;
+        height: 20rem;
+        & img{
+            width: 100%;
+            height: 100%;
+            object-fit: fill;
+        }
+    }
+    &__name{
+        border-bottom: 1px solid #dbdbdb;
+        padding-bottom: 3%;
+    }
+    &__description{
+        padding-top: 8%;
+        & li:not(:last-child){
+            margin-bottom: 5%;
+        }
+        & li h3{
+            display: inline;
+        }
+    }
+    &__btn{
+        margin-top: auto;
+    }
+}
